@@ -7,7 +7,7 @@ const rootReducer = combineReducers({
 
 let composeEnhancer = compose;
 if (__DEV__) {
-  composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // for dubger purpose
 }
 
 const configureStore = () => {
